@@ -27,12 +27,12 @@ struct menu *menu_create(menu_callback callback) {
 	struct menu *menu = calloc(1, sizeof(struct menu));
 	menu->strncmp = strncmp;
 	menu->font = "monospace 10";
-	menu->normalbg = 0x222222ff;
-	menu->normalfg = 0xbbbbbbff;
-	menu->promptbg = 0x005577ff;
+	menu->normalbg = 0x220022ff;
+	menu->normalfg = 0xffffffff;
+	menu->promptbg = 0xbe76e2ee;
 	menu->promptfg = 0xeeeeeeff;
-	menu->selectionbg = 0x005577ff;
-	menu->selectionfg = 0xeeeeeeff;
+	menu->selectionbg = 0xbe76e2ee;
+	menu->selectionfg = 0x000000ff;
 	menu->callback = callback;
 	menu->test_surface = cairo_image_surface_create(CAIRO_FORMAT_ARGB32, 1, 1);
 	menu->test_cairo = cairo_create(menu->test_surface);
