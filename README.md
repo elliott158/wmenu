@@ -1,3 +1,6 @@
+
+This is my custom patch of wmenu. Built specifically to look good on my Hyprland setup.
+
 # wmenu
 
 wmenu is an efficient dynamic menu for Sway and wlroots based Wayland
